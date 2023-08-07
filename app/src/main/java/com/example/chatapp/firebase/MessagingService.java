@@ -1,6 +1,5 @@
 package com.example.chatapp.firebase;
 
-import android.util.Log;
 
 import androidx.annotation.NonNull;
 
@@ -11,12 +10,14 @@ public class MessagingService extends FirebaseMessagingService {
     @Override
     public void onNewToken(@NonNull String token) {
         super.onNewToken(token);
-        Log.d("FCM", "Token: "+token);
+//        For Testing Only
+//        Log.d("FCM", "Token: "+token);
     }
 
     @Override
     public void onMessageReceived(@NonNull RemoteMessage message) {
         super.onMessageReceived(message);
-        Log.d("FCM", "Message: "+message.getNotification().getBody());
+//        for testing only
+//        Log.d("FCM", "Message: "+message.getNotification().getBody());
     }
 }
