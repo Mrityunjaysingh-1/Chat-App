@@ -29,7 +29,7 @@ public class PrefrenceManager {
         return sharedPreferences.getString(key,null);
     }
 
-    public void create() {
+    public void clear() {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.clear();
         editor.apply();
