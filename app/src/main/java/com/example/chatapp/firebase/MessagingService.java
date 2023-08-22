@@ -54,7 +54,7 @@ public class MessagingService extends FirebaseMessagingService {
         builder.setContentIntent(pendingIntent);
         builder.setAutoCancel(true);
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.0) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ECLAIR_0_1) {
             CharSequence channelName = "Chat Message";
             String channelDescription = "This is channel is used for socials notifications";
             int importance = NotificationManager.IMPORTANCE_DEFAULT;
